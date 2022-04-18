@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "basic-concepts-of-enriched-category-theory"
+version = "0.1.0"
+description = "Note on the book of Kelly."
+authors = ["Matthew Burke <matthew@rijalburke.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+staticjinja = "^4.1.2"
+
+[tool.poetry.dev-dependencies]
+black = {version = "^22.3.0", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+watch = "src.basic_concepts_of_enriched_category_theory.main:dev"

@@ -1,29 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Introduction: basic conepts of enriched category theory</title>
-</head>
-<body>
-  <h1>Introduction</h1>
+{% extends 'base.html' %}
+{% block title %}Introduction{% endblock %}
 
-  <p>
-    This book collects together the basic concepts of enriched category theory.
-    We start from the elementary definitions and end by describing the categories of algebras for limit-defined theories.
-    Although we assume a little background knowledge of ordinary category theory,
-    from Chapter 3 onward we introduce the ordinary and enriched theory simultaneously.
-  </p>
+{% block content %}
+<h1>Introduction</h1>
 
-  <p>
-    If we want to define enriched categories then we must first define symmetric monoidal categories.
-    Given a symmetric monoidal category $\mathcal V$, 
-  </p>
+<p>
+  This book collects together the basic concepts of enriched category theory.
+  We start from the elementary definitions and end by describing the categories of algebras for limit-defined theories.
+  Although we assume a little background knowledge of ordinary category theory,
+  from Chapter 3 onward we introduce the ordinary and enriched theory simultaneously.
+</p>
 
-  
-  
-  
+<p>
+  To define enriched categories we first define symmetric monoidal categories.
+  If $\mathcal V$ is a symmetric monoidal category then we can construct a 2-category $\mathcal V$-Cat
+  that consists of enriched categories, functors and natural transformations.
+  Further we can define representable $\mathcal V$ functors and prove the Yoneda lemma.
+</p>
 
-</body>
-</html>
+<p>
+  If $\mathcal V$ is complete then $\mathcal V$-Cat is closed.
+  This means that we can make sense of diagrams in an enriched category and define limits in enriched categories.
+  The right type of limit for a $\mathcal V$-category is called an indexed limit.
+  (When $\mathcal V=Set$ then indexed limits are the same as ordinary limits.)
+  Moreover it is possible to extend $\mathcal V$ to a large 'universe' in a way that does not disturb limits and colimits.
+  This allows us to consider functor $\mathcal V$-categories where the domain is not necessarily small.
+</p>
+
+<p>
+  We consider enriched category theory to be the correct setting for discussing limit-theories and completions.
+  It is possible that the logic of symmetric monoidal categories contains the most fundamental part of classical logic.
+</p>
+
+{% endblock %}
